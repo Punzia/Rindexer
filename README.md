@@ -1,0 +1,2 @@
+# Rindexer
+Minified PHP Indexer

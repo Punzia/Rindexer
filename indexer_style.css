@@ -1,0 +1,120 @@
+:root {
+    --theme: rgb(206, 121, 52);
+    --bg: rgb(24, 23, 26);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--bg);
+    color: white;
+    overflow-x: hidden;
+}
+
+.index {
+    display: flex;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+}
+
+.head1 {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.cred {
+    margin-left: 50px;
+    padding-top: 20px;
+    color: grey;
+    padding-bottom: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cred a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 50px;
+    width: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+ul li {
+
+    font-size: 20px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #3b3833;
+}
+
+#dir {
+    color: grey;
+    padding-right: 10px;
+}
+
+li:hover #dir {
+    color: orange;
+}
+
+.folder::before {
+    content: '📁';
+
+}
+
+.videomp4::before {
+    content: '🎬'
+}
+
+.videomp4:hover::before {
+    content: '🤩'
+}
+
+
+li a {
+    transition: all .5s ease-in-out;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+li a:hover {
+    background-color: var(--theme);
+    color: black;
+}
+
+.folder:hover::before {
+    content: '📂';
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
